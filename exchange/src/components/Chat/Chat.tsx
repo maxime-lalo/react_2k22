@@ -96,6 +96,7 @@ function Home() {
 function onMessageSubmit() {
 
     const element = document.getElementsByClassName('messageEntered')[0] as HTMLInputElement;
+   
     var message = element.value;
 
     if (message.length > 0 && message.length < 100) {
@@ -106,6 +107,8 @@ function onMessageSubmit() {
     {
         alert("Message must be between 1 and 100 characters")
     }
+
+    element.value = "";
  
 }
 
