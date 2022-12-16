@@ -1,0 +1,57 @@
+{
+  "name": "minteed-back",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "run-script-os",
+    "develop:nix": "eslint . ; strapi develop",
+    "develop:windows": "eslint . & strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi",
+    "format": "prettier --write src",
+    "lint": "eslint .",
+    "lintfix": "eslint . --fix",
+    "cs": "config-sync"
+  },
+  "dependencies": {
+    "@pinata/sdk": "^1.1.26",
+    "@strapi/plugin-documentation": "4.1.11",
+    "@strapi/plugin-i18n": "4.1.11",
+    "@strapi/plugin-sentry": "^4.4.5",
+    "@strapi/plugin-users-permissions": "4.1.11",
+    "@strapi/provider-upload-aws-s3": "^4.1.9",
+    "@strapi/strapi": "4.1.11",
+    "@taquito/taquito": "^13.0.1",
+    "better-sqlite3": "7.4.6",
+    "bignumber.js": "^9.1.0",
+    "crypto": "^1.0.1",
+    "ethers": "^5.7.2",
+    "jsonwebtoken": "^8.5.1",
+    "pg": "^8.7.3",
+    "strapi-plugin-config-sync": "^1.0.4",
+    "strapi-plugin-migrations": "^1.0.4",
+    "uuid": "^8.3.2"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "d571dbbc-8ce4-4e23-b3f6-a77557c7c55b"
+  },
+  "engines": {
+    "node": ">=12.x.x <=16.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.19.1",
+    "eslint": "^8.23.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "2.7.1",
+    "prettier-eslint": "^15.0.1",
+    "run-script-os": "^1.1.6"
+  }
+}

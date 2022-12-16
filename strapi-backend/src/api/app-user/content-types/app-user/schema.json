@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "app_users",
+  "info": {
+    "singularName": "app-user",
+    "pluralName": "app-users",
+    "displayName": "AppUser",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "userAddress": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "pseudo": {
+      "type": "string"
+    },
+    "password": {
+      "type": "string"
+    }
+  }
+}
